@@ -1,0 +1,199 @@
+html{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.layout{
+    min-height: 100vh;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.fondo{
+    display: flex;
+    position: absolute;
+    opacity: 0.1;
+    height: 100vh;
+    width: 100%;
+}
+.up{
+    min-height: 20vh;
+    background-image: url(./images/image-2.jpg);
+    background-size: cover; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.containernav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: black;
+    height: 5vh;
+}
+
+.Travels{
+    background-color: red;
+    border-radius: 40%;
+}
+.jp{
+    padding-top: 5px;
+    color: white;
+    display: flex;
+}
+.jp2{
+    color: red;
+}
+
+.primernav{
+    gap: 10px;
+    min-height: 10px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+.primernav a{
+    text-decoration: none;
+    color: white; 
+    padding: 5px;
+ 
+}
+
+
+
+.mid{
+    flex-grow: 1;
+}
+
+h1{
+    text-align: center;
+    font-size: 20px;
+    background-color: rgba(238, 232, 232, 0.996);
+}
+h2{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 15px;
+}
+.contenedormid{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.articulos{
+    display: flex;
+    flex-direction: column;
+}
+.imagenes{
+    object-fit: none;
+    width: 250px;
+    height: 200px;
+    object-position: bottom;   
+    
+}
+.pimg{
+    background: rgba(0,0,0,0.8);
+    color: white;
+    text-align: center;
+}
+
+.contenedoruyt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+.lista{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    color: white;
+
+}
+.cl{
+    background: rgba(0,0,0,0.7);
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.tabla{
+    text-align: center;
+    padding: 2px;
+}
+tr, td, th{
+    border: 1px solid black;
+    text-align: center;
+    padding: 8px;
+    background: rgba(0,0,0,0.5);
+    color: white;
+}
+.uptable{
+    background-color: black;
+    color: white;
+    font-size: 10px;
+    padding: 5px;
+}
+
+.down{
+    min-height: 10vh;
+    background-color: black;
+    color: white;
+}
+
+.down a{
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .up{
+        min-height: 40vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50%;
+    }
+    .containernav{       
+        height: 8vh;
+        padding: 6px;
+    }
+    .contenedormid{
+        padding-top: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+    .articulos{
+        display: flex;
+        flex-direction: column;
+    }
+    .contenedoruyt{
+        padding-top: 20px;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        padding-bottom: 20px;
+    }
+    .down{
+        min-height: 20vh;
+        background-color: black;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+}
+
